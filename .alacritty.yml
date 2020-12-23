@@ -1,1 +1,58 @@
-../.alacritty.yml
+env:
+  TERM: xterm-256color
+
+window:
+  decorations: full
+  title: Alacritty
+  dynamic_title: true
+
+font:
+  normal:
+    family: monaco
+    style: Regular
+
+  size: 13
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+working_directory: None
+
+key_bindings:
+  - { key: N,       mods: Super,          action: SpawnNewInstance  }
+
+  - { key: T,       mods: Super,          chars: "\x02\x63"         }
+  - { key: Key0,    mods: Super,          chars: "\x02\x30"         }
+  - { key: Key1,    mods: Super,          chars: "\x02\x31"         }
+  - { key: Key2,    mods: Super,          chars: "\x02\x32"         }
+  - { key: Key3,    mods: Super,          chars: "\x02\x33"         }
+  - { key: Key4,    mods: Super,          chars: "\x02\x34"         }
+  - { key: Key5,    mods: Super,          chars: "\x02\x35"         }
+  - { key: Key6,    mods: Super,          chars: "\x02\x36"         }
+  - { key: Key7,    mods: Super,          chars: "\x02\x37"         }
+  - { key: Key8,    mods: Super,          chars: "\x02\x38"         }
+  - { key: Key9,    mods: Super,          chars: "\x02\x39"         }
+  - { key: Left,    mods: Super,          chars: "\x02\x70"         }
+  - { key: Right,   mods: Super,          chars: "\x02\x6e"         }
+
+  - { key: D,       mods: Super,          chars: "\x02\x25"         }
+  - { key: D,       mods: Control|Super,  chars: "\x02\x22"         }
+  - { key: Space,   mods: Super,          chars: "\x02\x20"         }
+  - { key: Up,      mods: Control|Super,  chars: "\x02\x1b[A"       }
+  - { key: Down,    mods: Control|Super,  chars: "\x02\x1b[B"       }
+  - { key: Right,   mods: Control|Super,  chars: "\x02\x1b[C"       }
+  - { key: Left,    mods: Control|Super,  chars: "\x02\x1b[D"       }
+  - { key: Up,      mods: Shift|Super,    chars: "\x02\x1b[1;2A"    }
+  - { key: Down,    mods: Shift|Super,    chars: "\x02\x1b[1;2B"    }
+  - { key: Right,   mods: Shift|Super,    chars: "\x02\x1b[1;2C"    }
+  - { key: Left,    mods: Shift|Super,    chars: "\x02\x1b[1;2D"    }
+
