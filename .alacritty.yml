@@ -8,14 +8,14 @@ window:
 
 font:
   normal:
-    family: monaco
+    family: Monaco
     style: Regular
 
   size: 13
 
   offset:
     x: 0
-    y: 0
+    y: -1
 
   glyph_offset:
     x: 0
