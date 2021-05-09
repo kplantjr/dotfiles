@@ -30,13 +30,13 @@ let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_improved_strings = 0
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_global_ycm_extra_conf = "$HOME/.ycm_extra_conf.py"
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'morhetz/gruvbox'
-Plug 'crusoexia/vim-monokai'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()

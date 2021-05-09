@@ -8,13 +8,14 @@ window:
 
 font:
   normal:
-    family: Monaco
+#   family: Monaco
+    family: FiraCode
     style: Regular
 
-  size: 13
+  size: 14
 
   offset:
-    x: 0
+    x: -1
     y: -1
 
   glyph_offset:
