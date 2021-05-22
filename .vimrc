@@ -18,7 +18,7 @@ set list
 hi SpecialKey ctermfg=DarkBlue
 
 set t_ut=''
-" set t_Co=256
+set t_Co=256
 set background=dark
 
 highlight Normal ctermbg=black ctermfg=white
@@ -32,9 +32,16 @@ let g:gruvbox_improved_strings = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_global_ycm_extra_conf = "$HOME/.ycm_extra_conf.py"
 
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
+let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#bufferline#overwrite_variables = 1
+
 call plug#begin('~/.vim/plugged')
 
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-bufferline'
 Plug 'Valloric/YouCompleteMe'
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
@@ -43,6 +50,7 @@ call plug#end()
 
 set cinoptions+=:0
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h set filetype=c
+autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal tabstop=8
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal noexpandtab
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal autoindent
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal cindent

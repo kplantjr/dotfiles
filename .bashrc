@@ -1,5 +1,3 @@
-export LD_LIBRARY_PATH="/usr/lib/libressl"
-
 export HISTSIZE=1000000
 
 alias diff='diff --color=auto'
