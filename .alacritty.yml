@@ -10,7 +10,7 @@ font:
   normal:
 #   family: Monaco
     family: FiraCode
-    style: Regular
+    style: Medium
 
   size: 14
 
