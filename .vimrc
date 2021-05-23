@@ -57,6 +57,7 @@ call plug#end()
 set cinoptions+=:0
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h set filetype=c
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal tabstop=8
+autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal shiftwidth=8
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal noexpandtab
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal autoindent
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal cindent
