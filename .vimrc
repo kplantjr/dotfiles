@@ -1,13 +1,12 @@
+set mouse=a
 set nocompatible
 set encoding=utf-8
 scriptencoding utf-8
 
-set laststatus=2
-set noshowmode
-
 set exrc
 set secure
-
+set laststatus=2
+set noshowmode
 set number
 set colorcolumn=81
 syntax on
@@ -22,6 +21,10 @@ set t_Co=256
 set background=dark
 
 highlight Normal ctermbg=black ctermfg=white
+
+nnoremap <F5> :Make clean<CR>
+nnoremap <F6> :Make debug<CR>
+nnoremap <F7> :Make<CR>
 
 let g:polyglot_disabled = ['autoindent']
 
@@ -39,12 +42,15 @@ let g:airline#extensions#bufferline#overwrite_variables = 1
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'morhetz/gruvbox'
+
+Plug 'bling/vim-bufferline'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'bling/vim-bufferline'
+
 Plug 'Valloric/YouCompleteMe'
-Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-dispatch'
 
 call plug#end()
 
@@ -57,4 +63,3 @@ autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal cindent
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal cino=(0:0
 
 colorscheme gruvbox
-
