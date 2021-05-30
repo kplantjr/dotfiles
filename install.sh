@@ -7,6 +7,7 @@ dotfiles=(
 	.tmux.conf
 	.vimrc
 	.ycm_extra_conf.py
+	.zshrc
 )
 
 echo "This script will place **hard links** in your home directory to "
