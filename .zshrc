@@ -11,6 +11,7 @@ alias grep='grep --color=auto'
 alias ip='ip -color=auto'
 alias ls='ls -F --color=auto'
 alias dmesg='dmesg --color=always'
+alias history='history -i'
 
 export PROMPT="%F{12}%n%f@%F{10}%m%f %F{11}%~%f %# "
 
@@ -20,6 +21,7 @@ export SAVEHIST=10000
 
 setopt append_history
 setopt share_history
+setopt extended_history
 setopt histignorespace
 setopt histignoredups
 
