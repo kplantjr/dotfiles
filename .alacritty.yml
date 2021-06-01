@@ -12,7 +12,7 @@ font:
     family: FiraCode
     style: Medium
 
-  size: 14
+  size: 12
 
   offset:
     x: -1
