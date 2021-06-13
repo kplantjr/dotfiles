@@ -23,6 +23,14 @@ endif
 unlet vimplug_root
 unlet vimplug_loc
 
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+else
+  set t_Co=256
+endif
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
@@ -53,7 +61,6 @@ set cursorline
 set list
 
 set t_ut=''
-set t_Co=256
 set background=dark
 set mouse=a
 set encoding=utf-8
