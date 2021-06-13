@@ -3,7 +3,7 @@ let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_improved_strings = 0
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_global_ycm_extra_conf = "$HOME/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "$HOME/.vim/ycm_extra_conf.py"
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'

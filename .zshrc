@@ -13,13 +13,11 @@ alias ls='ls -F --color=auto'
 alias dmesg='dmesg --color=always'
 alias history='history -i'
 
-export PROMPT="%F{12}%n%f@%F{10}%m%f %F{11}%~%f %# "
+export PROMPT="%B%F{red}%(?..%? )%B%F{blue}%n%f%b@%m %B%40<..<%~%<< %b%# "
 
 export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=10000
-
-export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 setopt append_history
 setopt share_history
