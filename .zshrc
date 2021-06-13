@@ -19,6 +19,8 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=10000
 
+export LIBVIRT_DEFAULT_URI="qemu:///system"
+
 setopt append_history
 setopt share_history
 setopt extended_history

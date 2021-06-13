@@ -37,11 +37,12 @@ Plug 'preservim/nerdtree'
 call plug#end()
 
 syntax on
-colorscheme gruvbox
 scriptencoding utf-8
 
-hi SpecialKey ctermfg=DarkBlue
-highlight Normal ctermbg=black ctermfg=white
+try
+colorscheme gruvbox
+catch
+endtry
 
 set nocompatible
 set exrc
