@@ -10,6 +10,9 @@ let g:airline_theme = 'powerlineish'
 let g:airline#extensions#bufferline#enabled = 1
 let g:airline#extensions#bufferline#overwrite_variables = 1
 
+" Tell polyglot to parse *.h as C
+let g:c_syntax_for_h = 1
+
 " Automatic installation of vim-plug
 let vimplug_root = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 let vimplug_loc = vimplug_root . '/autoload/plug.vim'
@@ -72,6 +75,11 @@ nnoremap <F5> :Make clean<CR>
 nnoremap <F6> :Make debug<CR>
 nnoremap <F7> :Make<CR>
 nnoremap <F8> :NERDTreeToggle<CR>
+
+autocmd FileType make setlocal tabstop=8
+autocmd FileType make setlocal shiftwidth=8
+autocmd FileType make setlocal noexpandtab
+autocmd FileType make setlocal autoindent
 
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h set filetype=c
 autocmd BufWritePost,BufRead,BufNewFile *.c,*.h setlocal tabstop=8
